@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Metaballs</title>
+  <!-- MOBILE––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://api.fonts.coollabs.io/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="description"
+    content="An interactive step by step explanation of the marching squares algorithm for contour finding. Includes a merging metaball implementation using JavaScript!">
+  <!-- CSS––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/darkskelleton.css" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+  <canvas id="canvas" width="960" height="960"></canvas>
+  <!-- detect color scheme -->
+  <script type="text/javascript">
+    var secondary = "#F00"
+    var primary = "#333"
+
+    //set the colorscheme
+    if (window.matchMedia) {
+      window.matchMedia("(prefers-color-scheme: dark)").addListener(e => {
+        primary = e.matches
+          ? "#d3d7cf"
+          : "#333";
+        console.log("theme change detected, setting color to", primary);
+      });
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches)
+        primary = "#d3d7cf";
+    }
+  </script>
+
+ 
+    </section>
+    <noscript>
+      <style>
+        #explanation {
+          opacity: 1 !important;
+        }
+      </style>
+      <em>JavaScript is required to see the interactive demo.</em>
+    </noscript>
+  </div>
+  </div>
+  <script type="text/javascript" src="scripts/script_instanced.js"></script>
+  <script type="text/javascript" src="scripts/individualElements.js"></script>
+  <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+<script>if (!!localStorage.getItem("_dev") && !sessionStorage.getItem("_swa") && document.referrer.indexOf(location.protocol + "//" + location.host) !== 0) { fetch("https://counter.dev/track?" + new URLSearchParams({ referrer: document.referrer, screen: screen.width + "x" + screen.height, user: "missing-user", utcoffset: "1" })) }; sessionStorage.setItem("_swa", "1");</script>
+
+</html>
