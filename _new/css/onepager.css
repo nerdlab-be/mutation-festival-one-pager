@@ -9,12 +9,12 @@
 
 @font-face {
   font-family: "QuattrocodeVF-Regular";
-  src: url("./QuattrocodeVF-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/QuattrocodeVF-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "GT-Flexa-X-Compressed-Regular";
-  src: url("./GT-Flexa-X-Compressed-Regular.otf") format("opentype");
+  src: url("../assets/fonts/GT-Flexa-X-Compressed-Regular.otf") format("opentype");
 }
 
 /* Typography */

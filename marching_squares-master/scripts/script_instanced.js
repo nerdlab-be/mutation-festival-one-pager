@@ -192,10 +192,11 @@ class MarchingSquares {
 	}
 
 	drawLines() {
+		console.log(this.gridValues)
 		this.ctx.beginPath();
 		this.ctx.lineWidth = 2;
 		this.ctx.strokeStyle = secondary;
-		this.ctx.fillStyle = 'blue'; // specify the fill color here
+		this.ctx.fillStyle = 'white'; // specify the fill color here
 		for (var y = 0; y < this.gridValues.length; y++) {
 			for (var x = 0; x < this.gridValues[y].length; x++) {
 				if (!this.interpolation) {
@@ -221,7 +222,6 @@ class MarchingSquares {
 					];
 					var d = [x * this.rez, y * this.rez + this.rez * lerp(1, nw, sw)];
 				}
-
 				switch (this.gridValues[y][x]) {
 					case 1:
 					case 14:
@@ -247,10 +247,10 @@ class MarchingSquares {
 						this.line(d, a);
 						this.line(c, b);
 						break;
-					case 6:
-					case 9:
-						this.line(c, a);
-						break;
+						case 6:
+						case 9:
+							this.line(c, a);
+							break;
 
 					case 7:
 					case 8:
@@ -264,8 +264,13 @@ class MarchingSquares {
 					default:
 						break;
 				}
+				if(x == this.gridValues.length - 1){
+					this.line(a, c)
+				}
 			}
+			
 		}
+		this.ctx.closePath();
 		this.ctx.fill();
 		this.ctx.stroke();
 	}

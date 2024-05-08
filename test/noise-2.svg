@@ -1,10 +1,9 @@
-<!-- svg: first layer -->
 <svg viewBox='0 0 612 612' xmlns='http://www.w3.org/2000/svg'>
   <filter id='noiseFilter'>
     <feTurbulence 
-      type='fractalNoise' 
-      baseFrequency='0.38' 
-      numOctaves='1' 
+      type='turbulence' 
+      baseFrequency='0.18' 
+      numOctaves='6' 
       stitchTiles='stitch'/>
   </filter>
   
