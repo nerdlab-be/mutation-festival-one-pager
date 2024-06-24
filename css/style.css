@@ -22,7 +22,8 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -33,14 +34,19 @@ html, body {
 }
 
 /* Typography */
-h1, h2, .title-font {
+h1,
+h2,
+.title-font {
   font-family: "QuattrocodeVF-Regular";
   padding: 2% 0 1%;
   text-transform: uppercase;
   font-style: oblique -40deg;
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   font-family: "GT-Flexa-X-Compressed-Regular", roboto, sans-serif;
   padding: 2% 0 1%;
 }
@@ -49,7 +55,8 @@ h2 {
   font-size: 6rem;
 }
 
-h3, .title-font {
+h3,
+.title-font {
   font-size: 4rem;
 }
 
@@ -86,7 +93,8 @@ p {
   object-fit: cover;
 }
 
-.hero-content, .hero-marquee {
+.hero-content,
+.hero-marquee {
   position: absolute;
   top: 0;
   left: 0;
@@ -113,7 +121,8 @@ p {
 }
 
 /* Buttons */
-.button, .button-style {
+.button,
+.button-style {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,11 +145,20 @@ p {
   color: var(--pink-color);
 }
 
+header {
+  position: fixed;
+  width: 100vw;
+  top: 7.5vh;
+  right: 5vw;
+  z-index: 10;
+}
+
 /* Layout */
 .language-buttons {
-  position: absolute;
-  top: 10vh;
-  right: 0;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+
 }
 
 .lower-buttons {
@@ -158,7 +176,6 @@ p {
   align-items: center;
   flex-direction: column;
   background: url('../assets/bacteria.png') no-repeat right bottom;
-  background-blend-mode: overlay;
 }
 
 .introduction-buttons {
@@ -202,7 +219,13 @@ p {
   padding: 50px;
 }
 
-.join .marquee, .locations .marquee, .program .marquee {
+.join .card {
+  min-height: 600px;
+}
+
+.join .marquee,
+.locations .marquee,
+.program .marquee {
   display: flex;
   font-size: 400px;
   height: 400px;
@@ -210,7 +233,26 @@ p {
 
 .locations {
   background: var(--brown-color);
-  background: url('../assets/jellyfish.png') no-repeat right bottom;
+  background: url('../assets/jellyfish.png') 100% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: slide 10s infinite;
+}
+
+
+
+@keyframes slide {
+  0% {
+    background-position: 100% 100%;
+  }
+
+  50% {
+    background-position: 95% 95%;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
 }
 
 /* Utility */
@@ -223,7 +265,8 @@ button {
 }
 
 /* Duotone */
-.duotone::before, .duotone::after {
+.duotone::before,
+.duotone::after {
   content: '';
   display: block;
   width: 100%;
@@ -249,7 +292,9 @@ button {
 }
 
 /* Width Classes */
-.width-small, .width-medium, .width-large {
+.width-small,
+.width-medium,
+.width-large {
   min-width: 300px;
   margin: auto;
 }
@@ -271,22 +316,42 @@ button {
   color: var(--primary-background-color);
   border-radius: 50px;
   padding: 50px;
-  height: 100%;
+  box-sizing: border-box;
+  flex-grow: 1;
 }
 
 .flex {
   display: flex;
   gap: 50px;
   align-items: stretch;
+  justify-content: stretch;
+}
+
+.locations-text {
+  padding: 50px;
+  box-sizing: border-box;
+  flex-flow: row wrap;
+}
+
+.locations .card {
+  background: var(--pink-color);
+  color: var(--primary-text-color);
+  width: 30vw;
+}
+
+.locations .card:hover {
+  background: var(--pink-color-shadow);
 }
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
 
-  .button, .button-style {
+  .button,
+  .button-style {
     padding: 15px 50px 10px;
     font-size: 2rem;
   }
+
   .introduction-buttons {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -305,13 +370,74 @@ button {
     border-radius: 0;
   }
 
-  .join-text, .locations-text {
+  .join-text,
+  .locations-text {
     flex-wrap: wrap;
   }
 
-  .join .marquee, .locations .marquee, .program .marquee {
+
+  .join .marquee,
+  .locations .marquee,
+  .program .marquee {
     display: flex;
     font-size: 200px;
     height: 200px;
   }
+
+
+}
+
+.locations .shoppingcenter,
+.locations  .wintercircus,
+.locations  .eyc,
+.locations  .krook {
+
+}
+
+
+.locations .shoppingcenter:hover {
+  background: url('../assets/shoppingcenter.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.locations .wintercircus:hover {
+  background: url('../assets/wintercircus.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.locations .eyc:hover {
+  background: url('../assets/eyc.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.locations .krook:hover {
+  background: url('../assets/krook.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-blend-mode: darken;
+}
+
+footer{
+  background-color: var(--pink-color);
+  color: var(--brown-color);
+  padding: 10px 50px ;
+
+}
+
+.footer-logos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.footer-logos img{
+  height: 50px;
 }
