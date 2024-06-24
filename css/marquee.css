@@ -2,14 +2,14 @@
     position: relative;
     width: 100vw;
     max-width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
 .track {
     position: absolute;
     white-space: nowrap;
     will-change: transform;
-    animation: marquee 64s linear infinite;
+    animation: marquee 128s linear infinite;
 }
 
 @keyframes marquee {
@@ -25,4 +25,11 @@
 
 .marquee:hover .track {
     animation-play-state: paused;
+}
+
+@media screen and (max-width: 600px) {
+    .track{
+        animation: marquee 64s linear infinite;
+    }
+    
 }

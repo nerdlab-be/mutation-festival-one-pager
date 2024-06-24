@@ -7,74 +7,218 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/marquee.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/icons/site.webmanifest" />
   </head>
   <body>
     <header></header>
     <main>
-        <section class="hero-wrapper">
-            <section class="hero-background">
-                <div class="hero-background-video duotone">
-                  <video src="./assets/hero-video.mp4" autoplay loop>
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-                <div class="hero-marquee">
-                  <div class="marquee title-font">
-                    <div class="track">
-                      <div class="content">
-                        &nbsp;MutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutation
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            <section class="hero-content">
-                <div class="language-buttons">
-                  <button class="button" data-language="en">EN</button>
-                  <button class="button hidden" data-language="nl">NL</button>
-                </div>
-                <div class="date button-style">
-                  <p>22 → 24 NOV 2024</p>
-                </div>
-                <div class="lower-buttons">
-                    <button class="button button-program">Program</button>
-                    <button class="button button-location">Locations</button>
-                </div>
-               
-              </section>
-          
-        </section>
-        <section class="introduction">
-            <div class="introduction-buttons">
-                <span class="button-style">Art</span>
-                <span class="button-style">Technology</span>
-                <span class="button-style">Education</span>
-                <span class="button-style">Workshops</span>
-                <span class="button-style">BYOB</span>
-                <span class="button-style">Join</span>
-                <span class="button-style">Expositions</span>
-                <span class="button-style">Food</span>
-                <span class="button-style">Visie</span>
-
-            </div>
-            
-            <div class="introduction-text text-medium">
-                <p>Mutation gooit de tech, art & maker scene op een hoopje om mutaties binnen onze sociale structuur te creëren. Organisaties, kunstenaars en makers geven samen vorm aan het programma als basis voor gedeelde (r)evolutie en tastbare innovatie.</p>
-            </div>
-        </section>
-        <section class="join">
+      <section class="hero-wrapper">
+        <section class="hero-background">
+          <div class="hero-background-video duotone">
+            <video src="./assets/hero-video.mp4" autoplay loop>
+              <span data-language="en"
+                >Your browser does not support the video tag.</span
+              >
+              <span data-language="nl"
+                >Je browser ondersteunt de video tag niet.</span
+              >
+            </video>
+          </div>
+          <div class="hero-marquee">
             <div class="marquee title-font">
-                <div class="track">
-                  <div class="content">
-                    &nbsp;JoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoinJoin
-                  </div>
+              <div class="track">
+                <div class="content">
+                  MutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutation
                 </div>
               </div>
-            <div class="join-text text-medium">
-                <p>Join Mutation Festival en draag bij aan de (r)evolutie van de tech, art & maker scene. Mutation is een platform voor organisaties, kunstenaars en makers die samen werken aan tastbare innovatie en mutaties binnen onze sociale structuur.</p>
             </div>
+          </div>
         </section>
+        <section class="hero-content">
+          <div class="language-buttons">
+            <button class="button" data-language="nl" id="switch-to-en">
+              EN
+            </button>
+            <button class="button hidden" data-language="en" id="switch-to-nl">
+              NL
+            </button>
+          </div>
+          <div class="date button-style">
+            <p>22 → 24 NOV 2024</p>
+          </div>
+          <div class="lower-buttons">
+            <a class="button button-program" data-language="en" href="#program"
+              >Program</a
+            >
+            <a class="button button-program" data-language="nl" href="#program"
+              >Programma</a
+            >
+            <a
+              class="button button-location"
+              data-language="en"
+              href="#locations"
+              >Locations</a
+            >
+            <a
+              class="button button-location"
+              data-language="nl"
+              href="#locations"
+              >Locaties</a
+            >
+          </div>
+        </section>
+      </section>
+      <section class="introduction">
+        <div class="introduction-buttons width-large">
+          <span class="button-style" data-language="en">Art</span>
+          <span class="button-style" data-language="nl">Kunst</span>
+          <span class="button-style" data-language="en">Technology</span>
+          <span class="button-style" data-language="nl">Technologie</span>
+          <span class="button-style" data-language="en">Education</span>
+          <span class="button-style" data-language="nl">Onderwijs</span>
+          <span class="button-style" data-language="en">Workshops</span>
+          <span class="button-style" data-language="nl">Workshops</span>
+          <span class="button-style" data-language="en">BYOB</span>
+          <span class="button-style" data-language="nl">BYOB</span>
+          <span class="button-style" data-language="en">Join</span>
+          <span class="button-style" data-language="nl">Doe&nbsp;mee</span>
+          <span class="button-style" data-language="en">Expositions</span>
+          <span class="button-style" data-language="nl">Tentoonstellingen</span>
+          <span class="button-style" data-language="en">Food</span>
+          <span class="button-style" data-language="nl">Eten</span>
+          <span class="button-style" data-language="en">Vision</span>
+          <span class="button-style" data-language="nl">Visie</span>
+        </div>
+
+        <div class="introduction-text text-medium">
+          <p data-language="en">
+            Mutation mixes the tech, art & maker scene to create mutations
+            within our social structure. Organizations, artists, and makers
+            shape the program together as a basis for shared (r)evolution and
+            tangible innovation.
+          </p>
+          <p data-language="nl">
+            Mutation gooit de tech, art & maker scene op een hoopje om mutaties
+            binnen onze sociale structuur te creëren. Organisaties, kunstenaars
+            en makers geven samen vorm aan het programma als basis voor gedeelde
+            (r)evolutie en tastbare innovatie.
+          </p>
+        </div>
+      </section>
+      <section class="join">
+        <div class="marquee title-font">
+          <div class="track">
+            <div class="content" data-language="en">
+              &nbsp;Join Join Join Join Join Join Join Join Join Join Join Join
+            </div>
+            <div class="content" data-language="nl">
+              &nbsp;Doe mee Doe mee Doe mee Doe mee Doe mee Doe mee Doe mee Doe
+              mee Doe mee Doe mee
+            </div>
+          </div>
+        </div>
+        <section class="join-text text-medium flex">
+          <div class="card width-medium">
+            <h3>Partner</h3>
+            <div class="text">
+              <p data-language="en">
+                We are looking for makers, organizations, and others who want to
+                contribute, such as talks and workshops. Our program is already
+                mutating, but there is certainly room for more!
+              </p>
+              <p data-language="nl">
+                We zoeken makers, organisaties en anderen die invulling willen
+                geven, zoals talks en workshops. Ons programma is al aan het
+                muteren, maar er is zeker plaats voor meer!
+              </p>
+              <p data-language="en">
+                Want to help think or do? We are organizing a second brainstorm
+                on June 24 or 25! Let us know via this form if you will be
+                there.
+              </p>
+              <p data-language="nl">
+                Zin om mee te helpen denken of doen? We organiseren een tweede
+                brainstorm op 24 of 25 juni! Laat het weten via dit formulier of
+                je erbij bent.
+              </p>
+              <br />
+              <a class="button-style" data-language="en"> Join </a>
+              <a class="button-style" data-language="nl"> Doe mee </a>
+            </div>
+          </div>
+          <div class="card width-medium">
+            <h3 data-language="en">Visitor</h3>
+            <h3 data-language="nl">Bezoeker</h3>
+            <div class="text">
+              <p data-language="en">More info soon.</p>
+              <p data-language="nl">Meer info binnenkort.</p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="locations" id="locations">
+        <div class="marquee title-font">
+          <div class="track">
+            <div class="content" data-language="en">
+              &nbsp;Locations Locations Locations Locations Locations Locations
+            </div>
+            <div class="content" data-language="nl">
+              &nbsp;Locaties Locaties Locaties Locaties Locaties Locaties
+            </div>
+          </div>
+        </div>
+        <section class="locations-text text-medium flex">
+          <div class="card width-medium card-location">
+            <h3 data-language="en">Shoppingcenter Zuid</h3>
+            <h3 data-language="nl">Winkelcentrum Zuid</h3>
+          </div>
+          <div class="card width-medium card-location">
+            <h3 data-language="en">Krook</h3>
+            <h3 data-language="nl">Krook</h3>
+          </div>
+          <div class="card width-medium card-location">
+            <h3 data-language="en">Wintercircus</h3>
+            <h3 data-language="nl">Wintercircus</h3>
+          </div>
+          <div class="card width-medium card-location">
+            <h3 data-language="en">EYC</h3>
+            <h3 data-language="nl">EYC</h3>
+          </div>
+        </section>
+      </section>
+      <section class="program" id="program">
+        <div class="marquee title-font">
+          <div class="track">
+            <div class="content" data-language="en">
+              &nbsp;Program Program Program Program Program Program Program
+            </div>
+            <div class="content" data-language="nl">
+              &nbsp;Programma Programma Programma Programma Programma Programma
+              Programma
+            </div>
+          </div>
+        </div>
+        <p data-language="en">Coming soon</p>
+        <p data-language="nl">Binnenkort beschikbaar</p>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-text">
+        <p data-language="en">
+          Mutation is an initiative of
+          <a href="https://nerdlab.be/">Nerdlab</a> and
+          <a href="https://decreatievestem.be/">De Creatieve Stem</a>.
+        </p>
+        <p data-language="nl">
+          Mutation is een initiatief van
+          <a href="https://nerdlab.be/">Nerdlab</a> en
+          <a href="https://decreatievestem.be/">De Creatieve Stem</a>.
+        </p>
+      </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
