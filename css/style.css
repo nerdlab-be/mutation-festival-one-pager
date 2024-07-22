@@ -1,6 +1,6 @@
 :root {
   --primary-text-color: white;
-  --primary-background-color: #020202;
+  --primary-background-color: #1a0f04;
   --primary-spot-color: rgb(219, 158, 236);
   --pink-color: #f268e5;
   --pink-color-shadow: #f268e462;
@@ -17,8 +17,21 @@
   src: url("./GT-Flexa-X-Compressed-Regular.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "GT-Flexa-Standard-Regular";
+  src: url("./GT-Flexa-Standard-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GT-Flexa-Standard-Medium";
+  src: url("./GT-Flexa-Standard-Medium.otf") format("opentype");
+}
+
+html, body {
+  max-width: 100vw;
+}
 html {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scroll-behavior: smooth;
 }
 
@@ -30,7 +43,7 @@ body {
   padding: 0;
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
-  font-family: roboto, sans-serif;
+  font-family: 'GT-Flexa-Standard-Regular', roboto, sans-serif;
 }
 
 /* Typography */
@@ -118,6 +131,7 @@ p {
   height: 140vh;
   top: -35vh;
   mix-blend-mode: color-dodge;
+  background: transparent;
 }
 
 /* Buttons */
@@ -138,6 +152,8 @@ p {
   border: 2px solid var(--brown-color);
   box-sizing: border-box;
   font-family: "GT-Flexa-X-Compressed-Regular", roboto, sans-serif;
+  
+  white-space: nowrap;
 }
 
 .button:hover {
@@ -192,13 +208,13 @@ header {
   border: 2px solid var(--pink-color);
   margin: 5px;
   z-index: 10;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
-.introduction-buttons .button-style:hover {
+/* .introduction-buttons .button-style:hover {
   background-color: var(--pink-color);
   color: var(--brown-color);
-}
+} */
 
 .introduction-text {
   min-width: 300px;
@@ -222,6 +238,8 @@ header {
 
 .join .card {
   min-height: 600px;
+  border-radius: 0px;
+  margin: 0;
 }
 
 .join .marquee,
@@ -233,11 +251,8 @@ header {
 }
 
 .locations {
-  background: var(--brown-color);
-  background: url('../assets/jellyfish.png') 100% 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  animation: slide 10s infinite;
+  /* background: var(--brown-color); */
+
 }
 
 
@@ -304,6 +319,10 @@ button {
   width: 25%;
 }
 
+.width-medium-3 {
+  width: 33%;
+}
+
 .width-medium {
   width: 50%;
 }
@@ -321,6 +340,7 @@ button {
   flex-grow: 1;
 }
 
+
 .flex {
   display: flex;
   gap: 50px;
@@ -332,6 +352,10 @@ button {
   padding: 50px;
   box-sizing: border-box;
   flex-flow: row wrap;
+  background: url('../assets/jellyfish.png') 100% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: slide 10s infinite;
 }
 
 .locations .card {
@@ -357,19 +381,40 @@ footer{
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
 .footer-logos img{
   height: 50px;
 }
 
+.join{ 
+  background-color: white;
+}
+
 /* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  .join-text {
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 768px) {
+  .flex{
+    padding: 25px;
+  }
+
+  .card{
+    min-width: 300px;
+  }
 
   .button,
   .button-style {
     padding: 15px 50px 10px;
     font-size: 2rem;
+    max-width: 100%;
   }
 
   .introduction-buttons {
@@ -396,6 +441,7 @@ footer{
   }
 
 
+
   .join .marquee,
   .locations .marquee,
   .program .marquee {
@@ -406,7 +452,15 @@ footer{
   footer {
     padding: 10px 10px;
     flex-wrap: wrap;
+    width: 100vw;
+    box-sizing: border-box;
   }
+
+  .footer-logos{
+    align-items: center;
+    justify-content: center;
+  }
+
 
 }
 

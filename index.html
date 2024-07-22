@@ -1,30 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Mutation Festival</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/marquee.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/icons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/icons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/icons/site.webmanifest" />
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/marquee.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png"/>
+    <link rel="manifest" href="./assets/icons/site.webmanifest"/>
   </head>
   <body>
     <header>
@@ -39,13 +25,9 @@
       <section class="hero-wrapper">
         <section class="hero-background">
           <div class="hero-background-video duotone">
-            <video src="./assets/hero-video.mp4" autoplay muted loop>
-              <span data-language="en"
-                >Your browser does not support the video tag.</span
-              >
-              <span data-language="nl"
-                >Je browser ondersteunt de video tag niet.</span
-              >
+            <video src="./assets/hero-video.mp4" autoplay="autoplay" muted="muted" loop="loop">
+              <span data-language="en">Your browser does not support the video tag.</span >
+              <span data-language="nl">Je browser ondersteunt de video tag niet.</span >
             </video>
           </div>
           <div class="hero-marquee">
@@ -60,7 +42,8 @@
         </section>
         <section class="hero-content">
           <div class="date button-style">
-            <p>22 → 24 NOV 2024</p>
+            <!-- TODO Styling -->
+            <p>Mutation Festival / 22 → 24 NOV 2024</p>
           </div>
           <div class="lower-buttons">
             <a class="button button-program" href="#program">
@@ -75,6 +58,7 @@
         </section>
       </section>
       <section class="introduction">
+        <!-- TODO: add slashed -->
         <div class="introduction-buttons width-large">
           <a class="button-style">
             <span data-language="en">Art</span>
@@ -108,90 +92,92 @@
             <span data-language="en">Talks</span>
             <span data-language="nl">Talks</span>
           </a>
-          <a class="button-style">
-            <span data-language="en">Vision</span>
-            <span data-language="nl">Visie</span>
-          </a>
+          <!-- <a class="button-style"> <span data-language="en">Vision</span> <span data-language="nl">Visie</span> </a> -->
         </div>
 
         <div class="introduction-text text-medium">
           <p data-language="en">
-            Mutation mixes the tech, art & maker scene to create mutations
-            within our social structure. Organizations, artists, and makers
-            shape the program together as a basis for shared (r)evolution and
-            tangible innovation.
+            Mutation mixes the tech, art & maker scene to create mutations within our social structure. Organizations, artists, and makers shape the program together as a basis for shared (r)evolution and tangible innovation.
           </p>
           <p data-language="nl">
-            Mutation gooit de tech, art & maker scene op een hoopje om mutaties
-            binnen onze sociale structuur te creëren. Organisaties, kunstenaars
-            en makers geven samen vorm aan het programma als basis voor gedeelde
-            (r)evolutie en tastbare innovatie.
+            Mutation gooit de tech, art & maker scene op een hoopje om mutaties binnen onze sociale structuur te creëren. Organisaties, kunstenaars en makers geven samen vorm aan het programma als basis voor gedeelde (r)evolutie en tastbare innovatie.
           </p>
         </div>
       </section>
       <section class="join">
+        <!-- TODO: Overlopende SVG background -->
         <div class="marquee title-font">
           <div class="track">
             <div class="content" data-language="en">
               &nbsp;Join Join Join Join Join Join Join Join Join Join Join Join
             </div>
             <div class="content" data-language="nl">
-              &nbsp;Doe mee Doe mee Doe mee Doe mee Doe mee Doe mee Doe mee Doe
-              mee Doe mee Doe mee
+              &nbsp;Doe mee Doe mee Doe mee Doe mee Doe mee Doe mee Doe mee Doe mee Doe mee Doe mee
             </div>
           </div>
         </div>
         <section class="join-text text-medium flex">
-          <div class="card width-medium">
-            <h3>Partner</h3>
+          <div class="card width-medium-3">
+            <h3>
+              <span data-language="en">Connect</span>
+              <span data-language="nl">Connecteer</span>
+            </h3>
             <div class="text">
               <p data-language="en">
-                We are looking for makers, organizations, and others who want to
-                contribute, such as talks and workshops. Our program is already
-                mutating, but there is certainly room for more!
+                Want to help think or participate? We're organizing a second brainstorm on August 12 or 13! At our partner brainstorms, we meet, forge plans, and encourage cross-pollination.
               </p>
               <p data-language="nl">
-                We zoeken makers, organisaties en anderen die invulling willen
-                geven, zoals talks en workshops. Ons programma is al aan het
-                muteren, maar er is zeker plaats voor meer!
+                Zin om mee te helpen denken of doen? We organiseren een tweede brainstorm op 12 of 13 augustus! Op onze partner brainstorms ontmoeten we elkaar, smeden we plannen en stimuleren kruisbestuiving.
               </p>
+              <br/>
+              <a href="https://forms.gle/aBt32iHPB7CsbZCb7" target="_blank">
+                <button class="button-style" data-language="en">Connect</button>
+                <button class="button-style" data-language="nl">Connecteer</button>
+              </a>
+            </div>
+          </div>
+          <div class="card width-medium-3">
+            <h3>
+              <span data-language="nl">Doe Mee</span>
+              <span data-language="en">Join us</span>
+            </h3>
+            <div class="text">
               <p data-language="en">
-                Want to help think or do? We are organizing a second brainstorm
-                on June 24 or 25! Let us know via this form if you will be
-                there.
+                We are looking for makers, organizations, and others who want to contribute, such as talks and workshops. Our program is already mutating, but there is certainly room for more!
               </p>
               <p data-language="nl">
-                Zin om mee te helpen denken of doen? We organiseren een tweede
-                brainstorm op 24 of 25 juni! Laat het weten via dit formulier of
-                je erbij bent.
+                We zoeken makers, organisaties en anderen die invulling willen geven, zoals talks en workshops. Ons programma is al aan het muteren, maar er is zeker plaats voor meer!
               </p>
-              <br />
+              <br/>
               <a href="https://forms.gle/d7CxddGFzCciVyUb9" target="_blank">
                 <button class="button-style" data-language="en">Join</button>
                 <button class="button-style" data-language="nl">Doe mee</button>
               </a>
             </div>
           </div>
-          <div class="card width-medium">
-            <h3 data-language="en">Visitor</h3>
-            <h3 data-language="nl">Bezoeker</h3>
+          <div class="card width-medium-3">
+            <h3 data-language="en">Visit us</h3>
+            <h3 data-language="nl">Bezoek ons</h3>
             <div class="text">
               <p data-language="en">
-                What can you expect? A mix of tech, art & maker scene. A program
-                that is shaped together with organizations, artists, and makers.
-                A basis for shared (r)evolution and tangible innovation.
+                What can you expect? A mix of tech, art & maker scene. A program shaped in collaboration with organizations, artists, and makers. A foundation for shared (r)evolution and tangible innovation.
+              </p>
+              <p data-language="en">
+                Mark it in your calendar!
               </p>
               <p data-language="nl">
-                Wat kan je verwachten? Een mix van tech, art & maker scene. Een
-                programma dat samen met organisaties, kunstenaars en makers
-                wordt vormgegeven. Een basis voor gedeelde (r)evolutie en
-                tastbare innovatie.
+                Wat kan je verwachten? Een mix van tech, art & maker scene. Een programma dat samen met organisaties, kunstenaars en makers wordt vormgegeven. Een basis voor gedeelde (r)evolutie en tastbare innovatie.
+              </p>
+              <p data-language="nl">
+                Schrijf het in je agenda!
               </p>
             </div>
           </div>
+          
         </section>
       </section>
       <section class="locations" id="locations">
+        <!-- add white background -->
         <div class="marquee title-font">
           <div class="track">
             <div class="content" data-language="en">
@@ -221,32 +207,27 @@
               De Krook offers us space for workshops and talks, more info soon.
             </p>
             <p data-language="nl">
-              De Krook biedt ons plaats voor workshops en talks, meer info
-              binnenkort.
+              De Krook biedt ons plaats voor workshops en talks, meer info binnenkort.
             </p>
           </div>
           <div class="card width-medium card-location wintercircus">
             <h3 data-language="en">Wintercircus</h3>
             <h3 data-language="nl">Wintercircus</h3>
             <p data-language="en">
-              The Wintercircus is the place for the more artistic and
-              experimental activities such as BYOB.
+              The Wintercircus is the place for the more artistic and experimental activities such as BYOB.
             </p>
             <p data-language="nl">
-              Het Wintercircus is de plek voor de meer artistieke en
-              experimentele activiteiten zoals BYOB.
+              Het Wintercircus is de plek voor de meer artistieke en experimentele activiteiten zoals BYOB.
             </p>
           </div>
           <div class="card width-medium card-location eyc">
             <h3 data-language="en">EYC</h3>
             <h3 data-language="nl">EYC</h3>
             <p data-language="en">
-              The old library (now part of EYC) is the place where we will
-              probably organize makathons and workshops.
+              The old library (now part of EYC) is the place where we will probably organize makathons and workshops.
             </p>
             <p data-language="nl">
-              De oude bibliotheek (nu deel van EYC) is de plek waar we
-              waarschijnlijk makathons en workshops zullen organiseren.
+              De oude bibliotheek (nu deel van EYC) is de plek waar we waarschijnlijk makathons en workshops zullen organiseren.
             </p>
           </div>
         </section>
@@ -258,8 +239,7 @@
               &nbsp;Program Program Program Program Program Program Program
             </div>
             <div class="content" data-language="nl">
-              &nbsp;Programma Programma Programma Programma Programma Programma
-              Programma
+              &nbsp;Programma Programma Programma Programma Programma Programma Programma
             </div>
           </div>
         </div>
@@ -267,32 +247,19 @@
         <h3 data-language="nl" style="text-align: center">
           Binnenkort beschikbaar
         </h3>
-        <br />
-        <br />
+        <br/>
+        <br/>
       </section>
     </main>
     <footer>
-      <!-- <div class="footer-text">
-        <p data-language="en">
-          Mutation is an initiative of
-          <a href="https://nerdlab.be/">Nerdlab</a> and
-          <a href="https://decreatievestem.be/">De Creatieve Stem</a>.
-        </p>
-        <p data-language="nl">
-          Mutation is een initiatief van
-          <a href="https://nerdlab.be/">Nerdlab</a> en
-          <a href="https://decreatievestem.be/">De Creatieve Stem</a>.
-        </p>
-      </div> -->
+      <!-- <div class="footer-text"> <p data-language="en"> Mutation is an initiative of <a href="https://nerdlab.be/">Nerdlab</a> and <a href="https://decreatievestem.be/">De Creatieve Stem</a>. </p> <p data-language="nl"> Mutation is een initiatief van <a href="https://nerdlab.be/">Nerdlab</a> en <a href="https://decreatievestem.be/">De Creatieve Stem</a>. </p> </div> -->
       <div class="footer-logos">
-        <img src="./assets/logos/nerdlab.svg" alt="Nerdlab logo" />
-        <img
-          src="./assets/logos/decreatievestem.png"
-          alt="De Creatieve Stem logo"
-        />
-        <img src="./assets/logos/Bosa.svg" alt="" />
-        <img src="./assets/logos/gent.png" alt="" />
-        <img src="./assets/logos/vlaanderen-logo.svg" alt="" />
+        <!-- TODO: add logos -->
+        <img src="./assets/logos/nerdlab.svg" alt="Nerdlab logo"/>
+        <img src="./assets/logos/decreatievestem.png" alt="De Creatieve Stem logo"/>
+        <img src="./assets/logos/Bosa.svg" alt=""/>
+        <img src="./assets/logos/gent.png" alt=""/>
+        <img src="./assets/logos/vlaanderen-logo.svg" alt=""/>
       </div>
     </footer>
     <script src="./scripts/main.js"></script>
