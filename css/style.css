@@ -31,7 +31,7 @@ html, body {
   max-width: 100vw;
 }
 html {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -320,7 +320,7 @@ button {
 }
 
 .width-medium-3 {
-  width: 33%;
+  width: 30%;
 }
 
 .width-medium {
