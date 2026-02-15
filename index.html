@@ -1,266 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Mutation Festival</title>
-    <link rel="stylesheet" href="./css/reset.css"/>
-    <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="stylesheet" href="./css/marquee.css"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png"/>
-    <link rel="manifest" href="./assets/icons/site.webmanifest"/>
-  </head>
-  <body>
-    <header>
-      <div class="language-buttons">
-        <button class="button" data-language="nl" id="switch-to-en">EN</button>
-        <button class="button hidden" data-language="en" id="switch-to-nl">
-          NL
-        </button>
-      </div>
-    </header>
-    <main>
-      <section class="hero-wrapper">
-        <section class="hero-background">
-          <div class="hero-background-video duotone">
-            <video src="./assets/hero-video.mp4" autoplay="autoplay" muted="muted" loop="loop">
-              <span data-language="en">Your browser does not support the video tag.</span >
-              <span data-language="nl">Je browser ondersteunt de video tag niet.</span >
-            </video>
-          </div>
-          <div class="hero-marquee">
-            <div class="marquee title-font">
-              <div class="track">
-                <div class="content">
-                  MutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutation
-                </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mutation Festival</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/marquee.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png" />
+  <link rel="manifest" href="./assets/icons/site.webmanifest" />
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo button-style">
+      <!-- <img src="./assets/logo.svg" alt="Mutation Festival logo"/> -->
+      <p>Mutation Festival</p>
+    </div>
+    <div class="header__language-buttons">
+      <button class="button button--language" data-language="nl" id="switch-to-en">EN</button>
+      <button class="button button--language button--hidden" data-language="en" id="switch-to-nl">NL</button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <section class="hero__background">
+        <div class="hero__video hero__video--duotone">
+          <video src="./assets/hero-video.mp4" autoplay="autoplay" muted="muted" loop="loop">
+            <span data-language="en">Your browser does not support the video tag.</span>
+            <span data-language="nl">Je browser ondersteunt de video tag niet.</span>
+          </video>
+        </div>
+        <div class="hero__marquee">
+          <div class="marquee marquee--title">
+            <div class="marquee__track">
+              <div class="marquee__content">
+                MutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutationMutation
               </div>
             </div>
           </div>
-        </section>
-        <section class="hero-content">
-          <div class="date button-style">
-            <!-- TODO Styling -->
-            <p>Mutation Festival / 22 → 24 NOV 2024</p>
-          </div>
-          <div class="lower-buttons">
-            <a class="button button-program" href="#program">
-              <span data-language="en">Program</span>
-              <span data-language="nl">Programma</span>
-            </a>
-            <a class="button button-location" href="#locations">
-              <span data-language="en">Ghent</span>
-              <span data-language="nl">Gent</span>
-            </a>
-          </div>
-        </section>
-      </section>
-      <section class="introduction">
-        <!-- TODO: add slashed -->
-        <div class="introduction-buttons width-large">
-          <a class="button-style">
-            <span data-language="en">Art</span>
-            <span data-language="nl">Kunst</span>
-          </a>
-          <a class="button-style">
-            <span data-language="en">Technology</span>
-            <span data-language="nl">Technologie</span>
-          </a>
-          <a class="button-style">
-            <span data-language="en">Education</span>
-            <span data-language="nl">Onderwijs</span>
-          </a>
-          <a class="button-style">
-            <span data-language="en">Music</span>
-            <span data-language="nl">Muziek</span>
-          </a>
-          <a class="button-style">
-            <span data-language="en">Workshops</span>
-            <span data-language="nl">Workshops</span>
-          </a>
-          <a class="button-style">
-            <span data-language="en">BYOB</span>
-            <span data-language="nl">BYOB</span>
-          </a>
-          <a class="button-style">
-            <span data-language="en">Expositions</span>
-            <span data-language="nl">Tentoonstellingen</span>
-          </a>
-          <a class="button-style">
-            <span data-language="en">Talks</span>
-            <span data-language="nl">Talks</span>
-          </a>
-          <!-- <a class="button-style"> <span data-language="en">Vision</span> <span data-language="nl">Visie</span> </a> -->
         </div>
+      </section>
+      <section class="hero__content">
+        <div class="hero__date button-style">
+          <p>20 → 22 NOV 2026</p>
+        </div>
+        <div class="hero__buttons">
+          <a class="button button--program" href="#program">
+            <span data-language="en">Program</span>
+            <span data-language="nl">Programma</span>
+          </a>
+          <a class="button button--location" href="#about">
+            <span data-language="en">More Info</span>
+            <span data-language="nl">Meer Info</span>
+          </a>
+        </div>
+      </section>
+    </section>
 
-        <div class="introduction-text text-medium">
-          <p data-language="en">
-            Mutation mixes the tech, art & maker scene to create mutations within our social structure. Organizations, artists, and makers shape the program together as a basis for shared (r)evolution and tangible innovation.
-          </p>
-          <p data-language="nl">
-            Mutation gooit de tech, art & maker scene op een hoopje om mutaties binnen onze sociale structuur te creëren. Organisaties, kunstenaars en makers geven samen vorm aan het programma als basis voor gedeelde (r)evolutie en tastbare innovatie.
-          </p>
-        </div>
-      </section>
-      <section class="join">
-        <!-- TODO: Overlopende SVG background -->
-        <div class="marquee title-font">
-          <div class="track">
-            <div class="content" data-language="en">
-              &nbsp;Join Join Join Join Join Join Join Join Join Join Join Join
-            </div>
-            <div class="content" data-language="nl">
-              &nbsp;Doe mee Doe mee Doe mee Doe mee Doe mee Doe mee Doe mee Doe mee Doe mee Doe mee
-            </div>
-          </div>
-        </div>
-        <section class="join-text text-medium flex">
-          <div class="card width-medium-3">
-            <h3>
-              <span data-language="en">Connect</span>
-              <span data-language="nl">Connecteer</span>
-            </h3>
-            <div class="text">
-              <p data-language="en">
-                Want to help think or participate? We're organizing a second brainstorm on August 12 or 13! At our partner brainstorms, we meet, forge plans, and encourage cross-pollination.
-              </p>
-              <p data-language="nl">
-                Zin om mee te helpen denken of doen? We organiseren een tweede brainstorm op 12 of 13 augustus! Op onze partner brainstorms ontmoeten we elkaar, smeden we plannen en stimuleren kruisbestuiving.
-              </p>
-              <br/>
-              <a href="https://forms.gle/aBt32iHPB7CsbZCb7" target="_blank">
-                <button class="button-style" data-language="en">Connect</button>
-                <button class="button-style" data-language="nl">Connecteer</button>
-              </a>
-            </div>
-          </div>
-          <div class="card width-medium-3">
-            <h3>
-              <span data-language="nl">Doe Mee</span>
-              <span data-language="en">Join us</span>
-            </h3>
-            <div class="text">
-              <p data-language="en">
-                We are looking for makers, organizations, and others who want to contribute, such as talks and workshops. Our program is already mutating, but there is certainly room for more!
-              </p>
-              <p data-language="nl">
-                We zoeken makers, organisaties en anderen die invulling willen geven, zoals talks en workshops. Ons programma is al aan het muteren, maar er is zeker plaats voor meer!
-              </p>
-              <br/>
-              <a href="https://forms.gle/d7CxddGFzCciVyUb9" target="_blank">
-                <button class="button-style" data-language="en">Join</button>
-                <button class="button-style" data-language="nl">Doe mee</button>
-              </a>
-            </div>
-          </div>
-          <div class="card width-medium-3">
-            <h3 data-language="en">Volunteering</h3>
-            <h3 data-language="nl">Wordt vrijwilliger</h3>
-            <div class="text">
-              <p data-language="en">
-                We are looking for volunteers who want to help us during the festival. Are you a real doer and do you want to help us with the organization? Then sign up now!
-              </p>
-              <p data-language="nl">
-                We zoeken vrijwilligers die ons willen helpen tijdens het festival. Ben jij een echte doener en wil je ons helpen met de organisatie? Meld je dan nu aan!
-              </p>
-              <br>
-              <a href="https://forms.gle/6rQaYn2mzQqgETe1A" target="_blank">
-                <button class="button-style" data-language="en">Volunteer</button>
-                <button class="button-style" data-language="nl">Meld aan</button>
-              </a>
-            </div>
-          </div>
-          
-        </section>
-      </section>
-      <section class="locations" id="locations">
-        <!-- add white background -->
-        <div class="marquee title-font">
-          <div class="track">
-            <div class="content" data-language="en">
-              &nbsp;Locations Locations Locations Locations Locations Locations
-            </div>
-            <div class="content" data-language="nl">
-              &nbsp;Locaties Locaties Locaties Locaties Locaties Locaties
-            </div>
-          </div>
-        </div>
-        <section class="locations-text text-medium flex">
-          <div class="card width-medium card-location shoppingcenter">
-            <h3 data-language="en">Shoppingcenter Zuid</h3>
-            <h3 data-language="nl">Winkelcentrum Zuid</h3>
-            <p data-language="en">
-              We take over the old H&M in the Shoppingcenter Zuid.
-            </p>
-            <p data-language="nl">
-              We nemen de oude H&M in het winkelcentrum Zuid over.
-            </p>
-          </div>
-
-          <div class="card width-medium card-location krook">
-            <h3 data-language="en">Krook</h3>
-            <h3 data-language="nl">Krook</h3>
-            <p data-language="en">
-              De Krook offers us space for workshops and talks, more info soon.
-            </p>
-            <p data-language="nl">
-              De Krook biedt ons plaats voor workshops en talks, meer info binnenkort.
-            </p>
-          </div>
-          <div class="card width-medium card-location wintercircus">
-            <h3 data-language="en">Wintercircus</h3>
-            <h3 data-language="nl">Wintercircus</h3>
-            <p data-language="en">
-              The Wintercircus is the place for the more artistic and experimental activities such as BYOB.
-            </p>
-            <p data-language="nl">
-              Het Wintercircus is de plek voor de meer artistieke en experimentele activiteiten zoals BYOB.
-            </p>
-          </div>
-          <div class="card width-medium card-location eyc">
-            <h3 data-language="en">EYC</h3>
-            <h3 data-language="nl">EYC</h3>
-            <p data-language="en">
-              The old library (now part of EYC) is the place where we will probably organize makathons and workshops.
-            </p>
-            <p data-language="nl">
-              De oude bibliotheek (nu deel van EYC) is de plek waar we waarschijnlijk makathons en workshops zullen organiseren.
-            </p>
-          </div>
-        </section>
-      </section>
-      <section class="program" id="program">
-        <div class="marquee title-font">
-          <div class="track">
-            <div class="content" data-language="en">
-              &nbsp;Program Program Program Program Program Program Program
-            </div>
-            <div class="content" data-language="nl">
-              &nbsp;Programma Programma Programma Programma Programma Programma Programma
-            </div>
-          </div>
-        </div>
-        <h3 data-language="en" style="text-align: center">Coming soon</h3>
-        <h3 data-language="nl" style="text-align: center">
-          Binnenkort beschikbaar
-        </h3>
-        <br/>
-        <br/>
-      </section>
-    </main>
-    <footer>
-      <!-- <div class="footer-text"> <p data-language="en"> Mutation is an initiative of <a href="https://nerdlab.be/">Nerdlab</a> and <a href="https://decreatievestem.be/">De Creatieve Stem</a>. </p> <p data-language="nl"> Mutation is een initiatief van <a href="https://nerdlab.be/">Nerdlab</a> en <a href="https://decreatievestem.be/">De Creatieve Stem</a>. </p> </div> -->
-      <div class="footer-logos">
-        <!-- TODO: add logos -->
-        <img src="./assets/logos/nerdlab.svg" alt="Nerdlab logo"/>
-        <img src="./assets/logos/decreatievestem.png" alt="De Creatieve Stem logo"/>
-        <img src="./assets/logos/Bosa.svg" alt=""/>
-        <img src="./assets/logos/gent.png" alt=""/>
-        <img src="./assets/logos/vlaanderen-logo.svg" alt=""/>
+    <section class="introduction">
+      <div class="introduction__buttons">
+        <a class="button-style">
+          <span data-language="en">Art</span>
+          <span data-language="nl">Kunst</span>
+        </a>
+        <a class="button-style">
+          <span data-language="en">Technology</span>
+          <span data-language="nl">Technologie</span>
+        </a>
+        <a class="button-style">
+          <span data-language="en">Education</span>
+          <span data-language="nl">Onderwijs</span>
+        </a>
+        <a class="button-style">
+          <span data-language="en">Music</span>
+          <span data-language="nl">Muziek</span>
+        </a>
+        <a class="button-style">
+          <span data-language="en">Workshops</span>
+          <span data-language="nl">Workshops</span>
+        </a>
+        <a class="button-style">
+          <span data-language="en">BYOB</span>
+          <span data-language="nl">BYOB</span>
+        </a>
+        <a class="button-style">
+          <span data-language="en">Expositions</span>
+          <span data-language="nl">Tentoonstellingen</span>
+        </a>
+        <a class="button-style">
+          <span data-language="en">Talks</span>
+          <span data-language="nl">Talks</span>
+        </a>
       </div>
-    </footer>
-    <script src="./scripts/main.js"></script>
-  </body>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__content">
+        <p class="about__text" data-language="en">
+          Mutation throws the tech, art & maker scene together to create mutations within our social structure.
+          Organizations, artists and makers together shape the program as a basis for shared (r)evolution and tangible
+          innovation. We facilitate several preparatory workshops so that connections can be made and we actively search
+          together for interesting organizations to collaborate with. Both large and small organizations can join, so
+          that we can combine enthusiasm, time and resources. We want to inspire visitors to look positively towards the
+          future themselves and take it together in their hands.
+          <br /><br />
+          The first edition was a prototype; in 2026 we build further with more structure and clarity, without losing
+          the playful and experimental character.
+        </p>
+        <p class="about__text" data-language="nl">
+          Mutation gooit de tech-, art- & maker-scène op een hoopje om mutaties binnen onze sociale structuur te
+          creëren. Organisaties, kunstenaars en makers geven samen vorm aan het programma als basis voor gedeelde
+          (r)evolutie en tastbare innovatie. We faciliteren hiervoor enkele workshops vooraf zodat er connecties kunnen
+          gelegd worden en we gaan samen actief op zoek naar interessante organisaties om samen te werken. Zowel grote
+          als kleine organisaties kunnen aanschuiven, zodat we enthousiasme, tijd en middelen kunnen combineren. We
+          willen de bezoekers inspireren om zelf positief naar de toekomst te kijken en deze samen in handen te nemen.
+          <br /><br />
+          De eerste editie vormde een prototype; in 2026 bouwen we verder met meer structuur en helderheid, zonder het
+          speelse en experimentele karakter te verliezen.
+        </p>
+
+        <div class="about__timeline">
+          <h3 data-language="en" style="margin-bottom: 1rem; font-weight: 700;">Festival dates & themes</h3>
+          <h3 data-language="nl" style="margin-bottom: 1rem; font-weight: 700;">Festivaldata & thema's</h3>
+          <div class="about__timeline-item" data-language="en">Friday 20 November 2026 - Groups & Schools (Network
+            Event)</div>
+          <div class="about__timeline-item" data-language="nl">Vrijdag 20 november 2026 - Groepen, scholen
+            (Netwerkevent)</div>
+          <div class="about__timeline-item" data-language="en">Saturday 21 November 2026 - Broad Audience & BYOB</div>
+          <div class="about__timeline-item" data-language="nl">Zaterdag 21 november 2026 - Breed publiek en BYOB</div>
+          <div class="about__timeline-item" data-language="en">Sunday 22 November 2026 - Family Day & MathFest</div>
+          <div class="about__timeline-item" data-language="nl">Zondag 22 november 2026 - Familiedag en MathFest</div>
+        </div>
+
+        <p class="about__text" data-language="en">
+          To reinforce this shared (r)evolution, we are building an online platform where participating organizations
+          and makers shape the program themselves. Here you can register your activities, request materials and discover
+          what happens where and when.
+          <br /><br />
+          The platform is not just for Mutation: we open it to other organizations that want to apply this bottom-up
+          concept to their own festival. Together we build a movement that goes beyond one edition.
+        </p>
+        <p class="about__text" data-language="nl">
+          Om deze gedeelde (r)evolutie kracht bij te zetten, bouwen we een online platform waar deelnemende organisaties
+          en makers zelf het programma vorm geven. Hier kunnen jullie je activiteiten registreren, materiaal aanvragen
+          en ontdekken wat er op welk moment en waar gebeurt.
+          <br /><br />
+          Het platform is niet alleen voor Mutation: we stellen het open voor andere organisaties die dit bottom-up
+          concept willen toepassen in hun eigen festival. Samen bouwen we aan een beweging die verder gaat dan één
+          editie.
+        </p>
+
+        <div class="about__cta">
+          <p data-language="en" style="font-weight: 700; margin-bottom: 0.5rem;">Want to help develop the themes and big
+            questions?</p>
+          <p data-language="nl" style="font-weight: 700; margin-bottom: 0.5rem;">Wil je graag zelf ook mee ontwikkelen
+            aan de thema's en grote vraagstukken?</p>
+          <p data-language="en">Sign up for one of our program brainstorms: <a
+              href="https://forms.gle/xGBFTzhS42trX7447" target="_blank">Join the brainstorm</a></p>
+          <p data-language="nl">Schrijf je in op een van onze programmabrainstorms: <a
+              href="https://forms.gle/xGBFTzhS42trX7447" target="_blank">Mee bij brainstorm</a></p>
+          <p data-language="en">Relive Mutation 2024: <a href="https://youtu.be/YFKJqk5JgIo?si=K8o1Wdi19c8uMZc7"
+              target="_blank">Watch the video</a></p>
+          <p data-language="nl">Herbeleef Mutation 2024: <a href="https://youtu.be/YFKJqk5JgIo?si=K8o1Wdi19c8uMZc7"
+              target="_blank">Bekijk de video</a></p>
+        </div>
+      </div>
+    </section>
+    <div class="marquee title-font">
+      <div class="marquee__track">
+        <div class="marquee__content" data-language="en">
+          &nbsp;Partners partners partners Partners partners partners Partners partners partners Partners partners
+          partners Partners partners partners Partners partners partners Partners partners partners Partners partners
+          partners Partners partners partners Partners partners partners Partners partners partners Partners partners partners Partners partners partners Partners partners
+        </div>
+        <div class="marquee__content" data-language="nl">
+          &nbsp;Partners partners partners Partners partners partners Partners partners partners Partners partners
+          partners Partners partners partners Partners partners partners Partners partners partners Partners partners
+          partners Partners partners partners Partners partners partners Partners partners partners Partners partners partners Partners partners
+        </div>
+      </div>
+    </div>
+    <section class="partners">
+      <div class="partners__content">
+        <h2 class="partners__title" data-language="en">We're looking for partners, builders & dreamers</h2>
+        <h2 class="partners__title" data-language="nl">We zoeken partners, bouwers & dromers</h2>
+
+        <p class="partners__intro" data-language="en">
+          Mutation 2026 is looking for builders, dreamers, doers and thinkers who want to contribute to a festival where
+          experimentation and collaboration are central. Do you want to think along, help organize or become a partner?
+          Let us know!
+        </p>
+        <p class="partners__intro" data-language="nl">
+          Mutation 2026 is op zoek naar bouwers, dromers, doeners en denkers die willen bijdragen aan een festival waar
+          experiment en samenwerking centraal staan. Wil je meedenken, mee-organiseren of partner worden? Laat van je
+          horen!
+        </p>
+
+        <h3  data-language="en">Partner types</h3>
+        <h3 data-language="nl">Soorten partners</h3>
+
+        <ul class="partners__list" data-language="en">
+          <li class="partners__list-item">Makers collectives and artist networks</li>
+          <li class="partners__list-item">Cultural organizations and art institutions</li>
+          <li class="partners__list-item">Educational institutions and youth organizations</li>
+          <li class="partners__list-item">Technology and creativity labs</li>
+          <li class="partners__list-item">Social-artistic initiatives</li>
+          <li class="partners__list-item">Neighborhood organizations and community projects</li>
+          <li class="partners__list-item">Local entrepreneurs and catering partners</li>
+          <li class="partners__list-item">Public or city services with focus on culture or innovation</li>
+        </ul>
+
+        <ul class="partners__list" data-language="nl">
+          <li class="partners__list-item">Makerscollectieven en kunstenaarsnetwerken</li>
+          <li class="partners__list-item">Culturele organisaties en kunstinstellingen</li>
+          <li class="partners__list-item">Onderwijsinstellingen en jeugdwerkingen</li>
+          <li class="partners__list-item">Technologie- en creativiteitslabs</li>
+          <li class="partners__list-item">Sociaal-artistieke initiatieven</li>
+          <li class="partners__list-item">Buurtorganisaties en gemeenschapsprojecten</li>
+          <li class="partners__list-item">Lokale ondernemers en horecapartners</li>
+          <li class="partners__list-item">Publieke of stedelijke diensten met focus op cultuur of innovatie</li>
+        </ul>
+      </div>
+    </section>
+    <div class="marquee title-font">
+      <div class="marquee__track">
+        <div class="marquee__content" data-language="en">
+          &nbsp;Roles roles roles Roles roles roles Roles roles roles Roles roles roles Roles roles roles Roles roles
+          roles Roles roles roles Roles roles roles Roles roles roles Roles roles roles Roles roles roles Roles roles roles Roles roles roles Roles roles roles Roles roles roles Roles roles roles Roles roles roles Roles roles roles Roles roles roles Roles roles roles Roles roles roles Roles roles   
+        </div>
+        <div class="marquee__content" data-language="nl">
+          &nbsp;Rollen rollen rollen Rollen rollen rollen Rollen rollen rollen Rollen rollen rollen Rollen rollen
+          rollen Rollen rollen rollen Rollen rollen rollen Rollen rollen rollen Rollen rollen rollen Rollen rollen
+          rollen Rollen rollen rollen Rollen rollen rollen Rollen rollen rollen Rollen rollen rollen Rollen rollen
+          rollen Rollen rollen rollen Rollen rollen rollen Rollen rollen rollen Rollen rollen rollen Rollen rollen
+          rollen Rollen rollen rollen Rollen rollen rollen Rollen rollen rollen Rollen rollen rollen Rollen rollen
+          rollen Rollen rollen rollen Rollen rollen rollen Rollen rollen rollen Rollen rollen rollen Rollen rollen
+          rollen
+        </div>
+      </div>
+    </div>
+    <section class="roles">
+
+      <div class="roles__content">
+        <h2 class="roles__title" data-language="en">Open roles we're looking to fill</h2>
+        <h2 class="roles__title" data-language="nl">Open rollen die we willen invullen</h2>
+
+        <p data-language="en">
+          We are looking for engaged people and organizations to help shape the festival. We are building a team with
+          the following types of roles:
+        </p>
+        <p data-language="nl">
+          We zoeken geëngageerde personen en organisaties om het festival mee vorm te geven. We bouwen een team op met
+          volgende types rollen:
+        </p>
+
+        <div class="roles__grid">
+          <div class="roles__card">
+            <div class="roles__card-title" data-language="en">Coordination & Organization</div>
+            <div class="roles__card-title" data-language="nl">Coördinatie & organisatie</div>
+            <div class="roles__card-description" data-language="en">Overview, planning, structure</div>
+            <div class="roles__card-description" data-language="nl">Overzicht, planning, structuur</div>
+          </div>
+
+          <div class="roles__card">
+            <div class="roles__card-title" data-language="en">Logistics & Safety</div>
+            <div class="roles__card-title" data-language="nl">Logistiek & veiligheid</div>
+            <div class="roles__card-description" data-language="en">Setup, breakdown, material management, first aid
+            </div>
+            <div class="roles__card-description" data-language="nl">Opbouw, afbraak, materiaalbeheer, EHBO</div>
+          </div>
+
+          <div class="roles__card">
+            <div class="roles__card-title" data-language="en">Audience & Engagement</div>
+            <div class="roles__card-title" data-language="nl">Publiekswerking</div>
+            <div class="roles__card-description" data-language="en">Welcome, info points, visitor flow</div>
+            <div class="roles__card-description" data-language="nl">Onthaal, infopunten, publieksflow</div>
+          </div>
+
+          <div class="roles__card">
+            <div class="roles__card-title" data-language="en">Communication</div>
+            <div class="roles__card-title" data-language="nl">Communicatie</div>
+            <div class="roles__card-description" data-language="en">Press, social media, community building</div>
+            <div class="roles__card-description" data-language="nl">Pers, sociale media, communitybuilding</div>
+          </div>
+
+          <div class="roles__card">
+            <div class="roles__card-title" data-language="en">Program Development</div>
+            <div class="roles__card-title" data-language="nl">Programma</div>
+            <div class="roles__card-description" data-language="en">Content creation, workshops, exhibitions,
+              performances</div>
+            <div class="roles__card-description" data-language="nl">Inhoudelijke invulling, workshops, expo's, optredens
+            </div>
+          </div>
+
+          <div class="roles__card">
+            <div class="roles__card-title" data-language="en">Volunteer Coordination</div>
+            <div class="roles__card-title" data-language="nl">Vrijwilligerswerking</div>
+            <div class="roles__card-description" data-language="en">Recruitment, mentoring, community care</div>
+            <div class="roles__card-description" data-language="nl">Werving, begeleiding, community care</div>
+          </div>
+
+          <div class="roles__card">
+            <div class="roles__card-title" data-language="en">Technical & Production</div>
+            <div class="roles__card-title" data-language="nl">Techniek & productie</div>
+            <div class="roles__card-description" data-language="en">Lighting, sound, catering, infrastructure</div>
+            <div class="roles__card-description" data-language="nl">Licht, geluid, catering, infrastructuur</div>
+          </div>
+
+          <div class="roles__card">
+            <div class="roles__card-title" data-language="en">Education & Participation</div>
+            <div class="roles__card-title" data-language="nl">Educatie & participatie</div>
+            <div class="roles__card-description" data-language="en">Schools, youth organizations, social-artistic
+              networks</div>
+            <div class="roles__card-description" data-language="nl">Scholen, jeugdwerkingen, sociaal-artistieke
+              netwerken</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__logos">
+      <img src="./assets/logos/nerdlab.svg" alt="Nerdlab logo" />
+      <img src="./assets/logos/decreatievestem.png" alt="De Creatieve Stem logo" />
+      <img src="./assets/logos/Bosa.svg" alt="" />
+      <img src="./assets/logos/gent.png" alt="" />
+      <img src="./assets/logos/vlaanderen-logo.svg" alt="" />
+    </div>
+  </footer>
+  <script src="./scripts/main.js"></script>
+</body>
+
 </html>

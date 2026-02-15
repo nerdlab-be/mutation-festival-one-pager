@@ -5,13 +5,22 @@
     max-width: 100%;
     overflow: hidden;
     pointer-events: none;
+    user-select: none;
+    height: 5rem;
+    color: var(--primary-text-color);
   }
 
-.track {
+.marquee__track {
     position: absolute;
     white-space: nowrap;
     will-change: transform;
     animation: marquee 64s linear infinite;
+}
+
+.marquee__content {
+    display: inline-block;
+    padding-right: 100%;
+    transform: translate(0, -2rem);
 }
 
 @keyframes marquee {
@@ -30,7 +39,7 @@
 } */
 
 @media screen and (max-width: 600px) {
-    .track{
+    .marquee__track{
         animation: marquee 64s linear infinite;
     }
     
